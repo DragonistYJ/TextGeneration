@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>基于RL与GAN的长文本生成</title>
+    <meta name="description" content="Free Responsive Html5 Css3 Templates">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/zerogrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sub-page">
+<div class="wrap-body">
+    <div id="cssmenu">
+        <ul>
+            <li class="active"><a href="index.html"><span>主页</span></a></li>
+            <li class="has-sub"><a href="#"><span>文本生成</span></a>
+                <ul>
+                    <li class="has-sub"><a href="#"><span>诗歌</span></a>
+                        <ul>
+                            <li><a href="generate_poem.html?category=cangtou"><span>藏头诗</span></a></li>
+                            <li class="last"><a href="generate_poem.html?category=keyword"><span>关键词诗</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"><a href="#"><span>新闻</span></a>
+                        <ul>
+                            <li><a href="generate_news.html?category=sports"><span>体育新闻</span></a></li>
+                            <li class="last"><a href="generate_news.html?category=weather"><span>天气预报</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub"><a href="#"><span>主题文章</span></a>
+                        <ul>
+                            <li><a href="generate_theme.html?category=novel"><span>小说</span></a></li>
+                            <li class="last"><a href="generate_theme.html?category=prose"><span>散文</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="team.html"><span>关于团队</span></a></li>
+        </ul>
+    </div>
+
+    <header id="header">
+        <div class="wrap-header">
+            <!---Main Header--->
+            <div class="main-header">
+                <div class="zerogrid">
+                    <div class="row">
+                        <div class="hero-heading">
+                            <span>长文本生成</span>
+                            <div class="tl"></div>
+                            <div class="tr"></div>
+                            <div class="br"></div>
+                            <div class="bl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="container">
+        <div class="wrap-container">
+            <div class="zerogrid">
+                <div class="row"><!--Start Box-->
+                    <div class="crumbs">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </div>
+                    <div id="main-content">
+                        <div class="wrap-content">
+                            <img src="images/news.jpg" alt=""/>
+
+                            <div class="row" style="margin-top: 50px">
+                                <div class="col-sm-1-2">
+                                    <input type="text" name="subject" id="subject"
+                                           placeholder="输入您关键信息，用空格隔开"/>
+                                </div>
+                                <div>
+                                    <button class="button button-skin button-subscribe"
+                                            type="button" name="Submit">确定
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="poem" class="offset-md-1-5 sm-3-5" style="font-size: 24px">
+                                <p>你好</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="zerogrid wrap-footer">
+            <div class="row">
+                <div class="col-sm-2-4 col-footer-1">
+                    <div class="wrap-col">
+                        <h3 class="widget-title">关于</h3>
+                        <p>
+                            本项目旨在为微信公众号提供长文本智能生成服务，用户仅需输入关键字或者短文本，
+                            就能获得相关微信推送，如新闻、天气预报、诗歌等。由于目前长文本生成模型存在曝光偏差、信号稀疏等问题，
+                            故基于现有技术，本项目基于强化学习与生成对抗网络，利用策略梯度（Policy Gradient）方法作为生成器，
+                            使用卷积神经网络（Convolutional Neural Network）改造了生成对抗网络中的判别器，结合分层强化学习的思想，
+                            有效地完成强化学习任务分配、缓解反馈信号稀疏问题，构建了一个更有效的文本生成模型。
+                        </p>
+                        <ul class="quicklinks">
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">关于我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-1-4 col-footer-2">
+                    <div class="wrap-col">
+                        <h3 class="widget-title">联系我们</h3>
+                        <p>电话:</p>
+                        <strong style="font-size: 25px;">0123-456-789</strong>
+                        <p>地址:</p>
+                        <strong>四川大学江安校区</strong>
+                        <p>邮箱:</p>
+                        <strong>hhhhh@qq.com</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="copyright">
+                    Copyright @ 施宇昂 余坚 吴迪
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $(window).resize(function () {
+                var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+                if (width >= '768') {
+                    var footerHeight = $('#footer').outerHeight();
+                    $('#container').css({'marginBottom': footerHeight + 'px'});
+                } else {
+                    $('#container').css({'marginBottom': '0px'});
+                }
+            });
+            $(window).resize();
+
+            document.querySelector("#container > div > div > div > div.crumbs > ul").innerHTML = '<li><a href="index.html">主页</a></li>';
+            document.querySelector("#container > div > div > div > div.crumbs > ul").innerHTML += '<li><a href="#">新闻</a></li>';
+            document.querySelector("#container > div > div > div > div.crumbs > ul").innerHTML += '<li><a href="#">' + getQueryVariable('category') + '</a></li>';
+        });
+    </script>
+
+</div>
+</body>
+</html>
